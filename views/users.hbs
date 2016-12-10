@@ -1,0 +1,38 @@
+<div class="top">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        View Mode:
+        <select name="" id="">
+            <option value="card">Card</option>
+        </select>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <h2>{{name}}</h2>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        Current Iteration: {{currentIteration}}
+    </div>
+</div>
+<div class="mid">
+    {{#each project}}
+        <div class="wrapper col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="card">
+                <h3>Project 1</h3>
+                <h4>Role</h4>
+                <p>Last Updated: </p>
+                <div class="status">
+                    <textarea name="" placeholder="Yesterday" id="" cols="30" rows="3"></textarea>
+                    <textarea name="" placeholder="Today" id="" cols="30" rows="3"></textarea>
+                    <textarea name="" placeholder="Tomorrow" id="" cols="30" rows="3"></textarea>
+                </div>
+                <div class="tags">
+                    <input type="text" placeholder="Tags (@name #story !urgency)"/>
+                </div>
+                <div class="buttons">
+                    <button>Submit</button>
+                    <button>Reset</button>
+                </div>
+                <a href="">History</a>
+            </div>
+        </div>
+    {{/each}}
+</div>

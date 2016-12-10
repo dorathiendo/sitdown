@@ -1,0 +1,40 @@
+<div class="top">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        View Mode:
+        <select name="" id="">
+            <option value="card">Card</option>
+        </select>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <h2>{{projectName}}</h2>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        Current Iteration: {{currentIteration}}
+    </div>
+</div>
+<div class="mid">
+    {{#each people}}
+        <div class="wrapper col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="card">
+                <img src="http://www.aspirehire.co.uk/aspirehire-co-uk/_img/profile.svg" class="" alt=""/>
+                <h3 class="name">{{this.name}}</h3>
+                <h4 class="role">{{this.role}}</h4>
+                <div class="status">
+                    <p class="date">Last Updated: {{this.status.lastUpdated}}</p>
+                    <p>Yesterday: {{this.status.yesterday}}</p>
+                    <p>Today: {{this.status.today}}</p>
+                    <p>Tomorrow: {{this.status.tomorrow}}</p>
+                </div>
+                <div class="tags">
+                    <a href="">@Someone</a>
+                    <a href="">#StoryNumber</a>
+                    <a href="">!Urgency</a>
+                </div>
+                <div class="buttons">
+                    <button>Comment</button>
+                    <button>Sidebar</button>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
