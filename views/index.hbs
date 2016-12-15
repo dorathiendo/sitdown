@@ -21,9 +21,15 @@
                 <h4 class="role">{{this.role}}</h4>
                 <div class="status">
                     <p class="date">Last Updated: {{this.status.lastUpdated}}</p>
-                    <p>Yesterday: {{this.status.yesterday}}</p>
-                    <p>Today: {{this.status.today}}</p>
-                    <p>Tomorrow: {{this.status.tomorrow}}</p>
+                    <div>
+                        <p><span>Yesterday</span>{{this.status.yesterday}}</p>
+                    </div>
+                    <div>
+                        <p><span>Today</span>{{this.status.today}}</p>
+                    </div>
+                    <div>
+                        <p> <span>Tomorrow</span>{{this.status.tomorrow}}</p>
+                    </div>
                 </div>
                 <div class="tags">
                     <a href="">@Someone</a>
